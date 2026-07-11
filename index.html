@@ -152,19 +152,19 @@
         .mobile-menu a { display: block; padding: 15px 0; color: rgba(255,255,255,0.8); font-size: 0.95rem; }
 
         /* === HERO === */
-        .hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; }
+        .hero { min-height: 80vh; display: grid; grid-template-columns: 1fr 1fr; }
 
         .hero-text {
             background: var(--navy);
             display: flex; flex-direction: column; justify-content: center;
-            padding: calc(var(--nav-h) + 72px) 64px 80px;
+            padding: calc(var(--nav-h) + 44px) 48px 60px;
         }
-        .hero-text .eyebrow { margin-bottom: 22px; }
+        .hero-text .eyebrow { margin-bottom: 18px; }
         .hero-h1 {
-            font-size: clamp(2.1rem, 3.2vw, 3.1rem);
+            font-size: clamp(1.7rem, 2.4vw, 2.4rem);
             color: var(--white);
-            margin-bottom: 26px;
-            line-height: 1.18;
+            margin-bottom: 20px;
+            line-height: 1.22;
         }
         .hero-h1 em { color: var(--gold); font-style: italic; }
         .hero-sub {
@@ -372,10 +372,11 @@
         @media (max-width: 960px) {
             :root { --py: 64px; }
             .hero { grid-template-columns: 1fr; min-height: auto; }
-            .hero-text { padding: calc(var(--nav-h) + 52px) 36px 52px; }
-            .hero-photo { height: 65vw; }
+            .hero-text { padding: calc(var(--nav-h) + 36px) 32px 44px; }
+            .hero-photo { height: 55vw; }
+            .hero-photo img { object-position: center 18%; }
             .omne-grid { grid-template-columns: 1fr; gap: 40px; }
-            .omne-photo { order: -1; max-width: 360px; }
+            .omne-photo { max-width: 360px; }
             .skoleni-grid { grid-template-columns: repeat(2, 1fr); }
             .generace-grid { grid-template-columns: 1fr; gap: 44px; }
             .koucink-grid { grid-template-columns: 1fr; gap: 44px; }
@@ -407,7 +408,7 @@
 <!-- ============ NAV ============ -->
 <nav class="nav" id="nav">
     <div class="nav-inner">
-        <a href="#top" class="nav-logo">Jana Streichsbierová</a>
+        <a href="#top" class="nav-logo"></a>
         <ul class="nav-links">
             <li><a href="#omne">O mně</a></li>
             <li><a href="#skoleni">Školení</a></li>
